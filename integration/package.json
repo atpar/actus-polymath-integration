@@ -1,0 +1,13 @@
+{
+  "name": "actus-polymath-integration",
+  "version": "0.0.1",
+  "repository": "https://github.com/atpar/actus-polymath-integration.git",
+  "author": "jo-es <johannes.escherich+github@atpar.io>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "web3": "1.0.0-beta.55"
+  }
+}

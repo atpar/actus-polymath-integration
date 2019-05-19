@@ -1,0 +1,12 @@
+{
+  "name": "actus-polymath-integration",
+  "version": "0.0.1",
+  "description": "ACTUS Protocol / Polymath integration",
+  "repository": "https://github.com/atpar/actus-polymath-integration.git",
+  "author": "jo-es <johannes.escherich+github@atpar.io>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "deploy": "./scripts/deployLocal.sh"
+  }
+}

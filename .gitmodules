@@ -1,0 +1,8 @@
+[submodule "ap-monorepo"]
+	path = ap-monorepo
+	url = https://github.com/atpar/ap-monorepo.git
+	branch = master
+[submodule "polymath-core"]
+	path = polymath-core
+	url = https://github.com/atpar/polymath-core.git
+	branch = actus-integration
