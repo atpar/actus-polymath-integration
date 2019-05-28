@@ -3,9 +3,9 @@
 ![Primary-Market-Architecture](/Primary-Market-Architecture.jpg)
 
 ## Quick Start
-Install dependencies in @atpar/ap-contracts and polymath-core
+Install dependencies in integration, @atpar/ap-contracts and polymath-core
 ```sh
-# ./ap-monorepo/packages/ap-contracts & ./polymath-core
+# ./integration & ./ap-monorepo/packages/ap-contracts & ./polymath-core
 yarn install
 ```
 
@@ -17,6 +17,6 @@ yarn deploy
 
 Run the integration
 ```sh
-# ./integration/
+# ./integration
 yarn start
 ```
