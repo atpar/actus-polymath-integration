@@ -13,21 +13,21 @@ interface IEtherDividendCheckpoint {
 
 contract DividendCheckpointAdapter {
 
-  address public authorizedPayee;
+  address public authorizedPayer;
   address public dividendCheckpoint;
 
 
-  modifier onlyAuthorizedPayee {
-    require(msg.sender == authorizedPayee, "DividendCheckpointAdapter.onlyAuthorizedPayee: unauthorized sender.");
+  modifier onlyAuthorizedPayer {
+    require(msg.sender == authorizedPayer, "DividendCheckpointAdapter.onlyAuthorizedPayer: unauthorized sender.");
     _;
   }
 
-  constructor(address _authorizedPayee, address _dividendCheckpoint) public {
-    authorizedPayee = _authorizedPayee;
+  constructor(address _authorizedPayer, address _dividendCheckpoint) public {
+    authorizedPayer = _authorizedPayer;
     dividendCheckpoint = _dividendCheckpoint;
   }
 
-  function () public payable onlyAuthorizedPayee {
+  function () public payable onlyAuthorizedPayer {
     IEtherDividendCheckpoint(dividendCheckpoint).createDividend.value(msg.value)(
       block.timestamp, ~uint256(0), "Dividend Payment"
     );
